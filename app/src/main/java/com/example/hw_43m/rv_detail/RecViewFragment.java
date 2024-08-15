@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.hw_43m.DetailFragment;
 import com.example.hw_43m.OnItemClick;
 import com.example.hw_43m.R;
 import com.example.hw_43m.databinding.FragmentRecViewBinding;
@@ -72,8 +73,8 @@ public class RecViewFragment extends Fragment implements OnItemClick {
         DetailModel pizza = detailList.get(position);
         Bundle bundle = new Bundle();
         bundle.putSerializable("pizza", pizza);
-//        SecondRVFragment fragment = new SecondRVFragment();
-//        fragment.setArguments(bundle);
-//        requireActivity().getSupportFragmentManager().beginTransaction().replace(R.id.container, fragment).addToBackStack(null).commit();
+        DetailFragment fragment = new DetailFragment();
+        fragment.setArguments(bundle);
+        requireActivity().getSupportFragmentManager().beginTransaction().replace(R.id.container, fragment).addToBackStack(null).commit();
     }
 }
