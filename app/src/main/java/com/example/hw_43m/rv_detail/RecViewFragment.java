@@ -45,7 +45,7 @@ public class RecViewFragment extends Fragment implements OnItemClick {
     private void loadData(String item) {
         detailList.clear();
         if (item.equals("Pizza")) {
-            detailList.add(new DetailModel("pepperoni", "https://i.pinimg.com/originals/45/eb/98/45eb98c8637d591a1bde451eb1bce941.png", "45$", "Pizza"));
+            detailList.add(new DetailModel("pepperoni", "https://i.pinimg.com/originals/45/eb/98/45eb98c8637d591a1bde451eb1bce941.png", "45$", "Три удовольствия в нашем меню - это три средние пиццы на ваш выбор. Цена комбо зависит от выбранных пицц и может быть увеличена"));
             detailList.add(new DetailModel("pepperoni", "https://i.pinimg.com/originals/45/eb/98/45eb98c8637d591a1bde451eb1bce941.png", "45$", "Pizza"));
             detailList.add(new DetailModel("pepperoni", "https://i.pinimg.com/originals/45/eb/98/45eb98c8637d591a1bde451eb1bce941.png", "45$", "Pizza"));
             detailList.add(new DetailModel("pepperoni", "https://i.pinimg.com/originals/45/eb/98/45eb98c8637d591a1bde451eb1bce941.png", "45$", "Pizza"));
